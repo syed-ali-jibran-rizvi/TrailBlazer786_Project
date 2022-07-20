@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "357737066785",
+    "project_id": "trailblazer786-c713f",
+    "storage_bucket": "trailblazer786-c713f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357737066785:android:9d0afac84a25056525ce60",
+        "android_client_info": {
+          "package_name": "com.example.trailblazer786"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357737066785-fs9td0mmp0fc3ev9k5jfu8kf47e74hhg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgr0UvlRmgQqx0gvsY4H1xqDPpXuDrgAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357737066785-fs9td0mmp0fc3ev9k5jfu8kf47e74hhg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

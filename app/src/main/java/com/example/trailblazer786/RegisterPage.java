@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -56,7 +54,7 @@ DBhelper DB;
 
     public void login(View view)
     {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, mainactivity.class);
         startActivity(intent);
     }
 }

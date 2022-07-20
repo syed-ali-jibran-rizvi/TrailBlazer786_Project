@@ -9,6 +9,12 @@
     <string name="learnregister">REGISTER NOW!!!</string>
     <string name="PASSWORD">PASSWORD</string>
     <string name="PP">PERSONAL</string>
+    <string name="TrailBlazer786">Navigation Drawer</string>
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
     <string name="FS">FILE SECTION</string>
     <string name="VL">VDO. LECTURES</string>
     <string name="vc">VIDEO CALL</string>
@@ -29,4 +35,19 @@
     <string name="parhega">Parhega</string>
     <string name="india">INDIA</string>
     <string name="parhegahindi">पढ़ेगा</string>
+    <string name="student">STUDENT</string>
+    <string name="teacher">TEACHER</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
 </resources>

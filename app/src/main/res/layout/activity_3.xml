@@ -1,324 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:foregroundGravity="center"
-    tools:context=".activity3">
+    tools:context=".mainactivity">
 
-    <ImageView
-        android:id="@+id/imageView5"
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/actbg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="375dp"
-        android:layout_height="601dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <!--
+        In the above cardview widget
+        cardelevation property will give elevation to your card view
+        card corner radius will provide radius to your card view
+        card background color will give background color to your card view
+        card max elevation will give the cardview maximum elevation
+        card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+        card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+        below are the two widgets imageview and text view we are displaying inside our card view.
+        -->
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="174dp"
+            android:layout_height="143dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/teacherlogo" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card1"
         android:layout_alignParentBottom="true"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        tools:context=".activity3"
-        tools:ignore="MissingConstraints">
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="333dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
 
-        <LinearLayout
-            android:id="@+id/outerlayout"
-            android:layout_width="match_parent"
-            android:layout_height="772dp"
-            android:layout_margin="5dp"
-            android:orientation="vertical"
-            android:padding="2dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <LinearLayout
-                android:id="@+id/row1"
-                android:layout_width="match_parent"
-                android:layout_height="192dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/cell1"
-                    android:layout_width="187.5dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="0.5dp"
-                    android:gravity="bottom|center"
-                    android:orientation="vertical">
-
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/lottieAnimationView"
-                        android:layout_width="144dp"
-                        android:layout_height="115dp"
-                        android:scaleType="centerCrop"
-                        app:lottie_autoPlay="true"
-                        app:lottie_fileName="portani.json"
-                        app:lottie_loop="true" />
-
-                    <TextView
-                        android:id="@+id/porttxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="39dp"
-                        android:gravity="center"
-                        android:text="@string/PP"
-                        android:textSize="22sp" />
-
-                </LinearLayout>
+        <!--
+        In the above cardview widget
+        cardelevation property will give elevation to your card view
+        card corner radius will provide radius to your card view
+        card background color will give background color to your card view
+        card max elevation will give the cardview maximum elevation
+        card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+        card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+        below are the two widgets imageview and text view we are displaying inside our card view.
+        -->
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="174dp"
+            android:layout_height="143dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/student" />
 
 
-                <LinearLayout
-                    android:id="@+id/cell2"
-                    android:layout_width="187.5dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="0.5dp"
-                    android:gravity="bottom|center"
-                    android:orientation="vertical">
+    </androidx.cardview.widget.CardView>
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/fsani"
-                        android:layout_width="144dp"
-                        android:layout_height="115dp"
-                        android:scaleType="centerCrop"
-                        app:lottie_autoPlay="true"
-                        app:lottie_fileName="fileani.json"
-                        app:lottie_loop="true" />
-
-                    <TextView
-                        android:id="@+id/txtfs"
-                        android:layout_width="match_parent"
-                        android:layout_height="39dp"
-                        android:gravity="center"
-                        android:text="@string/FS"
-                        android:textSize="22sp" />
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/row2"
-                android:layout_width="match_parent"
-                android:layout_height="192dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/cell3"
-                    android:layout_width="187.5dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="0.5dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/vlecani"
-                        android:layout_width="144dp"
-                        android:layout_height="115dp"
-                        android:scaleType="fitCenter"
-                        app:lottie_autoPlay="true"
-                        app:lottie_fileName="vlecani.json"
-                        app:lottie_loop="true" />
-
-                    <TextView
-                        android:id="@+id/vlectxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="39dp"
-                        android:gravity="center"
-                        android:text="@string/VL"
-                        android:textSize="22sp" />
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:id="@+id/cell4"
-                    android:layout_width="194dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="0.5dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/vcani"
-                        android:layout_width="144dp"
-                        android:layout_height="115dp"
-                        android:scaleType="fitEnd"
-                        app:lottie_autoPlay="true"
-                        app:lottie_fileName="videocallanimation.json"
-                        app:lottie_loop="true" />
-
-                    <TextView
-                        android:id="@+id/vdocaltxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="39dp"
-                        android:gravity="center"
-                        android:text="@string/VC"
-                        android:textSize="22sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/row3"
-                android:layout_width="match_parent"
-                android:layout_height="192dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/cell5"
-                    android:layout_width="187.5dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="0.5dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/ttblani"
-                        android:layout_width="144dp"
-                        android:layout_height="115dp"
-                        android:scaleType="centerCrop"
-                        app:lottie_autoPlay="true"
-                        app:lottie_fileName="timetani.json"
-                        app:lottie_loop="true" />
-
-                    <TextView
-                        android:id="@+id/tttxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="39dp"
-                        android:gravity="center"
-                        android:text="@string/tt"
-                        android:textSize="22sp" />
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:id="@+id/cell6"
-                    android:layout_width="187.5dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="0.5dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/simani"
-                        android:layout_width="144dp"
-                        android:layout_height="115dp"
-                        android:scaleType="centerCrop"
-                        app:lottie_autoPlay="true"
-                        app:lottie_fileName="simani.json"
-                        app:lottie_loop="true" />
-
-                    <TextView
-                        android:id="@+id/simtxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="39dp"
-                        android:gravity="center"
-                        android:text="@string/sim"
-                        android:textSize="22sp" />
-
-                </LinearLayout>
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/row4_cell7"
-                android:layout_width="match_parent"
-                android:layout_height="192dp"
-                android:layout_margin="0dp"
-                android:gravity="center|top"
-                android:orientation="vertical">
-
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/tstani"
-                    android:layout_width="144dp"
-                    android:layout_height="115dp"
-                    android:scaleType="centerCrop"
-                    app:lottie_autoPlay="true"
-                    app:lottie_fileName="testanimation.json"
-                    app:lottie_loop="true" />
-
-                <TextView
-                    android:id="@+id/tsttxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="39dp"
-                    android:gravity="center"
-                    android:text="@string/test"
-                    android:textSize="22sp" />
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="186dp"
-        android:layout_height="167dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/mohualogo"
-        tools:ignore="ContentDescription,UnknownId" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="107dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:gravity="center"
-        android:text="@string/parhegahindi"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="168dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="@string/india"
-        android:textColor="#FFFFFF"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.373"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="79dp"
-        android:layout_height="65dp"
-        android:layout_alignParentTop="true"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="@+id/textView12"
-        app:layout_constraintHorizontal_bias="0.028"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.12"
-        app:srcCompat="@drawable/dhwaj"
-        tools:ignore="ContentDescription" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

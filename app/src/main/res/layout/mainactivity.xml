@@ -58,14 +58,14 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="305dp"
-        android:layout_height="309dp"
+        android:layout_width="231dp"
+        android:layout_height="207dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/b1"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/b1"
         app:layout_constraintTop_toBottomOf="@+id/b1"
-        app:layout_constraintVertical_bias="0.459"
+        app:layout_constraintVertical_bias="0.848"
         app:srcCompat="@drawable/school" />
 
     <ImageView
@@ -77,5 +77,33 @@
         app:layout_constraintStart_toStartOf="@+id/ccp"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mohua" />
+
+    <EditText
+        android:id="@+id/verifyotp"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittextborder"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter the OTP sent"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/b1"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/b1"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+    <Button
+        android:id="@+id/buttonverify"
+        android:layout_width="324dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittextborder"
+        android:text="VERIFY"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/b1"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/b1"
+        app:layout_constraintTop_toBottomOf="@+id/verifyotp"
+        app:layout_constraintVertical_bias="0.312" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

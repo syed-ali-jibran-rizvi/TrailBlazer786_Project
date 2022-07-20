@@ -37,7 +37,7 @@
             android:name=".RegisterPage"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".mainactivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
